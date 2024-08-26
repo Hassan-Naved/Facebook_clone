@@ -1,0 +1,139 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.content {
+    text-align: left;
+    margin-right: 50px;
+}
+
+.content h1 {
+    font-size: 70px;
+    color: #004aac;
+    margin-bottom: 10px;
+}
+
+.content p {
+    font-size: 20px;
+    color: #606770;
+}
+
+.login-form {
+    width: 390px;
+    padding: 20px;
+    background-color: rgb(233, 233, 233);
+    border-radius: 8px;
+    -webkit-box-shadow: 1px 2px 5px 5px rgba(233, 230, 230, 0.75);
+    -moz-box-shadow: 1px 2px 5px 5px rgba(243, 233, 233, 0.75);
+    box-shadow: 1px 2px 5px 5px rgba(214, 211, 211, 0.75);
+}
+
+.login-form input {
+    height: 20px;
+    width: 90%;
+    padding: 17px;
+    margin: 5px 0;
+    border: 1px solid #dddfe2;
+    border-radius: 6px;
+}
+
+.login-form button {
+    width: 100%;
+    padding: 17px;
+    margin: 10px 0;
+    background-color: #004db3;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+
+
+
+
+.login-form a {
+    color: #1877f2;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.login-form hr {
+    margin: 20px 0;
+    border: 0;
+    border-top: 1px solid #dddfe2;
+}
+
+.login-form p {
+    font-size: 12px;
+    color: #606770;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        padding: 20px;
+        height: auto;
+    }
+
+    .content {
+        margin-right: 0;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .content h1 {
+        font-size: 50px;
+    }
+
+    .content p {
+        font-size: 18px;
+    }
+
+    .login-form {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .login-form button.create-account {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .content h1 {
+        font-size: 40px;
+    }
+
+    .content p {
+        font-size: 16px;
+    }
+
+    .login-form input {
+        width: 100%;
+    }
+
+    .login-form button.create-account {
+        height: 60px;
+    }
+
+    .login-form p {
+        font-size: 10px;
+    }
+}
